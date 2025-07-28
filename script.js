@@ -15,7 +15,7 @@ const translations = {
   en: {
     nav: ["About", "Projects", "Certificates"],
     aboutTitle: "About Me",
-    aboutDesc: "My name is İbrahim Emir Ören, and I am a 12th grade student at Denizli Necla Ergun Abalıoğlu Trade Vocational and Technical Anatolian High School. I am a high school student who produces projects in the field of web development and has knowledge of HTML, CSS, JavaScript, and PHP. I aim to create modern and responsive designs that prioritise user experience, and I constantly strive to improve myself.",
+    aboutDesc: "My name is İbrahim Emir Ören, and I am a 12th grade student at Denizli Necla Ergun Abalıoğlu Trade Vocational and Technical Anatolian High School. I develop projects in the field of web development. I am knowledgeable in technologies such as HTML, CSS, JavaScript, and PHP. I strive to create modern and mobile-friendly web designs that prioritise user experience. I am constantly working to improve myself.",
     contact: [
       { label: "Email", value: "emiroren.business@gmail.com" },
       { label: "GitHub", value: "<a target='_blank' href='https://github.com/emiroren'>github.com/emiroren</a>" }
