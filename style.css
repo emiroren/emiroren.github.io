@@ -107,14 +107,14 @@ nav a:hover {
 .contact-list li {
   margin-bottom: 0.5rem;
 }
-.projects-list, .certificates-list {
+.projects-list, .participated-projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
   justify-items: center;
 }
-.project-card, .certificate-card {
+.project-card, .participated-project-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -125,7 +125,7 @@ nav a:hover {
   max-width: 350px;
   margin: 0 auto;
 }
-.project-card:hover, .certificate-card:hover {
+.project-card:hover, .participated-project-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 6px 24px rgba(79,140,255,0.12);
 }
@@ -146,7 +146,7 @@ nav a:hover {
   display: block;
   text-align: center;
 }
-.certificate-img {
+.participated-project-img {
   width: 100%;
   max-width: 220px;
   border-radius: 8px;
@@ -303,11 +303,11 @@ footer {
   .contact-list {
     text-align: center;
   }
-  .projects-list, .certificates-list {
+  .projects-list, .participated-projects-list {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .project-card, .certificate-card {
+  .project-card, .participated-project-card {
     max-width: 100%;
     width: 100%;
   }
