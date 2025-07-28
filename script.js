@@ -3,7 +3,7 @@ const translations = {
   tr: {
     nav: ["Hakkımda", "Projeler", "Sertifikalar"],
     aboutTitle: "Hakkımda",
-    aboutDesc: "Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi'nde 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üreten, HTML, CSS, JavaScript ve PHP konularında bilgi sahibi bir lise öğrencisiyim. Kullanıcı deneyimini ön planda tutan, modern ve responsıve tasarımlar oluşturmayı hedefliyor; sürekli olarak kendimi geliştirmeye çalışıyorum.",
+    aboutDesc: "Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üretmekteyim. HTML, CSS, JavaScript ve PHP gibi teknolojilerde bilgi sahibiyim. Kullanıcı deneyimini ön planda tutan, modern ve mobil uyumlu web tasarımları oluşturmaya özen gösteriyorum. Sürekli kendimi geliştirme odaklı çalışıyorum.",
     contact: [
       { label: "E-posta", value: "emiroren.business@gmail.com" },
       { label: "GitHub", value: "<a target='_blank' href='https://github.com/emiroren'>github.com/emiroren</a>" }
