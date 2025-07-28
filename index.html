@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kişisel Tanıtım Sayfam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="header-center">
+        <nav>
+          <a href="#about">Hakkımda</a>
+          <a href="#projects">Projeler</a>
+          <a href="#certificates">Sertifikalar</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="lang-switch">
+          <button id="lang-tr" class="lang-btn active">TR</button> |
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Hakkımda başlığının üstüne isim -->
+    <div class="about-title">
+      <h1 id="typewriter">İbrahim Emir Ören</h1>
+    </div>
+    <section id="about" class="section">
+      <div class="container about-container">
+        <div class="about-img">
+          <!-- Fotoğrafınızı buraya ekleyin -->
+          <img src="./assets/vesikalik.jpg" alt="Profil Fotoğrafı" />
+        </div>
+        <div class="about-info">
+          <h2>Hakkımda</h2>
+          <p>Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi'nde 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üreten, HTML, CSS, JavaScript ve PHP konularında bilgi sahibi bir lise öğrencisiyim. Kullanıcı deneyimini ön planda tutan, modern ve responsıve tasarımlar oluşturmayı hedefliyor; sürekli olarak kendimi geliştirmeye çalışıyorum.</p>
+          <ul class="contact-list">
+            <li><strong>E-posta:</strong> emiroren.business@gmail.com</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/emiroren">github.com/emiroren</a> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projelerim</h2>
+        <div id="projects-list" class="projects-list">
+          <!-- Projeler JS ile eklenecek -->
+        </div>
+      </div>
+    </section>
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2>Sertifikalarım</h2>
+        <div id="certificates-list" class="certificates-list">
+          <!-- Sertifikalar JS ile eklenecek -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 İbrahim Emir Ören</p>
+    </div>
+  </footer>
+  
+  <!-- Sertifika Modalı -->
+  <div id="certificate-modal" class="modal" style="display:none;">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-img" class="modal-img" src="" alt="Büyük Sertifika">
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

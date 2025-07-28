@@ -1,0 +1,62 @@
+.hero2{
+    width: 100%;
+    height: 762px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+    
+}
+
+
+.hero2{
+    background-image: url(../img/hero2_bg.png);
+    background-size: cover;
+    /* ARKAPLAN BLURLAŞCAK   */
+   
+}
+
+
+.hero2 h1,h3{
+    margin-bottom: 18px;
+}
+
+.hero2 ul{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.hero2 h1{
+    font-size: 64px;
+}
+
+.hero2 ul li{
+
+
+    line-height: 62px;
+
+}
+
+@media (max-width: 768px) {
+  .hero2 {
+    height: auto;
+    padding: 24px 0;
+  }
+  .hero2 h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .hero2 ul {
+    font-size: 1rem;
+  }
+  .hero2 ul li {
+    line-height: 32px;
+  }
+}
+
+

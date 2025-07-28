@@ -1,0 +1,69 @@
+.course-description{
+    width: 100%;
+    height: 768px;
+    background: #0B303F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 32px;
+}
+
+
+.description{
+    display: flex;
+    align-items: center;
+}
+
+
+.description ul:nth-child(even){
+    color:#FAB001;
+}
+
+
+.description ul{
+    list-style: none;
+}
+
+
+.description span{
+    color:#FAB001;
+}
+
+
+.pay button{
+    width: 350px;
+    padding: 18px;
+    font-size: 18px;
+    margin-top: 18px;
+    background-color: #FAB001;
+    font-weight: bolder;
+    transition: all 1s ease-in-out;
+}
+
+
+.description ul li{
+    line-height:62px;
+}
+
+
+.pay h4{
+    letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  .course-description {
+    height: auto;
+    font-size: 18px;
+    padding: 24px 0;
+  }
+  .description ul li {
+    line-height: 32px;
+  }
+  .pay button {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
