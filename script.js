@@ -1,27 +1,29 @@
 // Dil verileri
 const translations = {
   tr: {
-    nav: ["Hakkımda", "Projeler", "Sertifikalar"],
+    nav: ["Hakkımda", "Projeler", "Katıldığım Projeler"],
     aboutTitle: "Hakkımda",
-    aboutDesc: "Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üretmekteyim. HTML, CSS, JavaScript ve PHP gibi teknolojilerde bilgi sahibiyim. Kullanıcı deneyimini ön planda tutan, modern ve mobil uyumlu web tasarımları oluşturmaya özen gösteriyorum. Sürekli kendimi geliştirme odaklı çalışıyorum.",
+    aboutDesc: "Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi'nde 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üreten, HTML, CSS, JavaScript ve PHP konularında bilgi sahibi bir lise öğrencisiyim. Kullanıcı deneyimini ön planda tutan, modern ve responsıve tasarımlar oluşturmayı hedefliyor; sürekli olarak kendimi geliştirmeye çalışıyorum.",
     contact: [
       { label: "E-posta", value: "emiroren.business@gmail.com" },
-      { label: "GitHub", value: "<a target='_blank' href='https://github.com/emiroren'>github.com/emiroren</a>" }
+      { label: "LinkedIn", value: "linkedin.com/in/ornek" },
+      { label: "GitHub", value: "github.com/ornek" }
     ],
     projectsTitle: "Projelerim",
-    certificatesTitle: "Sertifikalarım",
+    participatedProjectsTitle: "Katıldığım Projeler",
     footer: "&copy; 2025 İbrahim Emir Ören"
   },
   en: {
-    nav: ["About", "Projects", "Certificates"],
+    nav: ["About", "Projects", "Participated Projects"],
     aboutTitle: "About Me",
-    aboutDesc: "My name is İbrahim Emir Ören, and I am a 12th grade student at Denizli Necla Ergun Abalıoğlu Trade Vocational and Technical Anatolian High School. I develop projects in the field of web development. I am knowledgeable in technologies such as HTML, CSS, JavaScript, and PHP. I strive to create modern and mobile-friendly web designs that prioritise user experience. I am constantly working to improve myself.",
+    aboutDesc: "My name is İbrahim Emir Ören, and I am a 12th grade student at Denizli Necla Ergun Abalıoğlu Trade Vocational and Technical Anatolian High School. I am a high school student who produces projects in the field of web development and has knowledge of HTML, CSS, JavaScript, and PHP. I aim to create modern and responsive designs that prioritise user experience, and I constantly strive to improve myself.",
     contact: [
       { label: "Email", value: "emiroren.business@gmail.com" },
-      { label: "GitHub", value: "<a target='_blank' href='https://github.com/emiroren'>github.com/emiroren</a>" }
+      { label: "LinkedIn", value: "linkedin.com/in/ornek" },
+      { label: "GitHub", value: "github.com/ornek" }
     ],
     projectsTitle: "My Projects",
-    certificatesTitle: "My Certificates",
+    participatedProjectsTitle: "Projects I Participated In",
     footer: "&copy; 2025 İbrahim Emir Ören"
   }
 };
@@ -30,7 +32,7 @@ const translations = {
 const projectsData = {
   tr: [
     {
-      title: "Sosyal Medya Uzmanlığı Satış",
+      title: "Sosyal Medya Uzmanlığı Satışı",
       description: "Sosyal medya uzmanlığı hizmeti sunan,bir web sitesi tasarladım. <br> <br> Kullanıcının: <br> -Fiyat bilgisine erişebilmesi <br> -Eğitim içeriğini görebilmesi",
       link: "/proje-1/proje1.html"
     },
@@ -63,19 +65,29 @@ const projectsData = {
     }
   ]
 };
-const certificatesData = {
+const participatedProjectsData = {
   tr: [
     {
       title: "Enerjinle Gelecek Senin Projesi",
-      description: "Katılım Belgesi",
+      description: "AYDEM Enerji Şirketi ile birlikte yürütülen proje",
       img: "./assets/aydem-katilim-belgesi.jpg"
+    },
+    {
+      title: "TÜBİTAK 4006 Bilim Fuarı",
+      description: "Okulumuzda düzenlenen TÜBİTAK 4006 Bilim Fuarında standımızdan küçük bir kare.",
+      img: "./assets/tubıtak-stand-dgd.jpg"
     }
   ],
   en: [
     {
       title: "Enerjinle Gelecek Senin Project",
-      description: "Certificate of Participation",
-      img: "./assets/aydem-katilim-belgesi.jpg"
+      description: "Project carried out with AYDEM Energy Company",
+      img: "./assets/aydem-proje.jpg"
+    },
+    {
+      title: "Sample Project 2",
+      description: "Another project description",
+      img: "./assets/proje2.jpg"
     }
   ]
 };
@@ -102,13 +114,13 @@ function setLanguage(lang) {
   });
   // Projeler başlığı
   document.querySelector('#projects h2').textContent = translations[lang].projectsTitle;
-  // Sertifikalar başlığı
-  document.querySelector('#certificates h2').textContent = translations[lang].certificatesTitle;
+  // Katıldığım projeler başlığı
+  document.querySelector('#participated-projects h2').textContent = translations[lang].participatedProjectsTitle;
   // Footer
   document.querySelector('footer .container p').innerHTML = translations[lang].footer;
   // Projeler ve sertifikalar
   renderProjects();
-  renderCertificates();
+  renderParticipatedProjects();
   // Buton aktifliği
   document.getElementById('lang-tr').classList.toggle('active', lang === 'tr');
   document.getElementById('lang-en').classList.toggle('active', lang === 'en');
@@ -129,21 +141,21 @@ function renderProjects() {
   });
 }
 
-function renderCertificates() {
-  const list = document.getElementById('certificates-list');
+function renderParticipatedProjects() {
+  const list = document.getElementById('participated-projects-list');
   list.innerHTML = '';
-  certificatesData[currentLang].forEach(cert => {
+  participatedProjectsData[currentLang].forEach(project => {
     const card = document.createElement('div');
-    card.className = 'certificate-card';
+    card.className = 'participated-project-card';
     card.innerHTML = `
-      ${cert.img ? `<img class="certificate-img" src="${cert.img}" alt="${cert.title}">` : ''}
-      <div class="project-title">${cert.title}</div>
-      <div class="project-desc">${cert.description}</div>
+      ${project.img ? `<img class="participated-project-img" src="${project.img}" alt="${project.title}">` : ''}
+      <div class="project-title">${project.title}</div>
+      <div class="project-desc">${project.description}</div>
     `;
-    // Sertifika fotoğrafına tıklama olayı ekle
-    if (cert.img) {
-      card.querySelector('.certificate-img').addEventListener('click', function() {
-        openCertificateModal(cert.img);
+    // Proje fotoğrafına tıklama olayı ekle
+    if (project.img) {
+      card.querySelector('.participated-project-img').addEventListener('click', function() {
+        openCertificateModal(project.img);
       });
     }
     list.appendChild(card);
