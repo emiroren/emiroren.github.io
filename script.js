@@ -6,7 +6,6 @@ const translations = {
     aboutDesc: "Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi'nde 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üreten, HTML, CSS, JavaScript ve PHP konularında bilgi sahibi bir lise öğrencisiyim. Kullanıcı deneyimini ön planda tutan, modern ve responsıve tasarımlar oluşturmayı hedefliyor; sürekli olarak kendimi geliştirmeye çalışıyorum.",
     contact: [
       { label: "E-posta", value: "emiroren.business@gmail.com" },
-      { label: "LinkedIn", value: "linkedin.com/in/ornek" },
       { label: "GitHub", value: "github.com/ornek" }
     ],
     projectsTitle: "Projelerim",
@@ -19,7 +18,6 @@ const translations = {
     aboutDesc: "My name is İbrahim Emir Ören, and I am a 12th grade student at Denizli Necla Ergun Abalıoğlu Trade Vocational and Technical Anatolian High School. I am a high school student who produces projects in the field of web development and has knowledge of HTML, CSS, JavaScript, and PHP. I aim to create modern and responsive designs that prioritise user experience, and I constantly strive to improve myself.",
     contact: [
       { label: "Email", value: "emiroren.business@gmail.com" },
-      { label: "LinkedIn", value: "linkedin.com/in/ornek" },
       { label: "GitHub", value: "github.com/ornek" }
     ],
     projectsTitle: "My Projects",
