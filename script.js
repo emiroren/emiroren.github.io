@@ -52,9 +52,14 @@ const projectsData = {
       link: "/proje-1/proje1.html"
     },
     {
-      title: "Sample Project 2",
-      description: "In this project, I accomplished the following...",
+      title: "Hotel Introduction",
+      description: "I designed a form where customers can obtain information about the hotel, view photos, explore room options, and contact customer service in case of any issues.<br> <br> The user can: <br> -Get information about the hotel <br> -See the view of the hotel <br> -See the room types <br> -Have the opportunity to make a reservation.",
       link: "/proje-2/proje2.html"
+    },
+    {
+      title: "Blog Site",
+      description: "In this project, I designed a personal blog site. <br> <br> The user can: <br> -Read blog posts <br> -Follow new posts.",
+      link: "/proje-1/proje1.html"
     }
   ]
 };
