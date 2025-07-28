@@ -30,7 +30,7 @@ const translations = {
 const projectsData = {
   tr: [
     {
-      title: "Sosyal Medya Uzmanlığı Satışı",
+      title: "Sosyal Medya Uzmanlığı Satış",
       description: "Sosyal medya uzmanlığı hizmeti sunan,bir web sitesi tasarladım. <br> <br> Kullanıcının: <br> -Fiyat bilgisine erişebilmesi <br> -Eğitim içeriğini görebilmesi",
       link: "/proje-1/proje1.html"
     },
@@ -47,8 +47,8 @@ const projectsData = {
   ],
   en: [
     {
-      title: "Sample Project 1",
-      description: "In this project, I did the following...",
+      title: "Social Media Expertise Sales",
+      description: "I designed a website that provides social media expertise services. <br> <br> The user can: <br> -Access price information <br> -View the training content.",
       link: "/proje-1/proje1.html"
     },
     {
