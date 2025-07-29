@@ -59,7 +59,7 @@ const projectsData = {
     {
       title: "Blog Site",
       description: "In this project, I designed a personal blog site. <br> <br> The user can: <br> -Read blog posts <br> -Follow new posts.",
-      link: "/proje-1/proje1.html"
+      link: "/proje-3/index.html"
     }
   ]
 };
