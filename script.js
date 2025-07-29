@@ -80,12 +80,12 @@ const participatedProjectsData = {
     {
       title: "Enerjinle Gelecek Senin Project",
       description: "Project carried out with AYDEM Energy Company",
-      img: "./assets/aydem-proje.jpg"
+      img: "./assets/aydem-katilim-belgesi.jpg"
     },
     {
-      title: "Sample Project 2",
-      description: "Another project description",
-      img: "./assets/proje2.jpg"
+      title: "TÜBİTAK 4006 Science Fair",
+      description: "A small square from our stand at the TÜBİTAK 4006 Science Fair held at our school.",
+      img: "./assets/tubıtak-stand-dgd.jpg"
     }
   ]
 };
