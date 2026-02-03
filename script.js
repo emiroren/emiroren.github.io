@@ -50,6 +50,11 @@ const projectsData = {
       title: "Twitch Çeviri Uygulaması",
       description: "Twitch yayınlarından ses alıp konuşmayı metne çeviren ve Türkçe'ye çeviren masaüstü uygulaması. <br> <br> -Vosk ile konuşmayı metne dönüştürme <br> -DeepL ile Türkçe çeviri <br> -Python / Tkinter arayüzü. Projeye tıklayarak tanıtım sayfasını ve ekran görüntüsünü görebilirsiniz.",
       link: "/proje-4/proje4.html"
+    },
+    {
+      title: "IzleFix.com",
+      description: "Film ve dizi keşif sitesi. Ne izlesem diyen kullanıcılar için öneriler ve popüler içerikler. <br> <br> -Film & dizi keşfi <br> -Kullanıcı dostu arayüz <br> Projeye tıklayarak tanıtım sayfasını görüp siteye gidebilirsiniz.",
+      link: "/proje-5/proje5.html"
     }
   ],
   en: [
@@ -72,6 +77,11 @@ const projectsData = {
       title: "Twitch Translation App",
       description: "Desktop app that captures audio from Twitch streams, converts speech to text, and translates to Turkish. <br> <br> -Speech-to-text with Vosk <br> -Translation with DeepL <br> -Python / Tkinter GUI. Click to open the project page with screenshot and details.",
       link: "/proje-4/proje4.html"
+    },
+    {
+      title: "IzleFix.com",
+      description: "Film and series discovery site for users who ask 'What should I watch?'. Recommendations and popular content. <br> <br> -Movie & series discovery <br> -User-friendly interface <br> Click to open the project page and visit the site.",
+      link: "/proje-5/proje5.html"
     }
   ]
 };
