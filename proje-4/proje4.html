@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitch Çeviri Uygulaması | İbrahim Emir Ören</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --bg-card: #1a1f28;
+      --text: #e8eaed;
+      --text-muted: #9ca3af;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.15);
+      --border: rgba(255, 255, 255, 0.06);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.08), transparent);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: var(--accent);
+    }
+    h1 {
+      font-size: 1.75rem;
+      color: var(--text);
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .project-image-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+    }
+    .project-image-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+    }
+    .project-content h2 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .project-content p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .project-content ul {
+      color: var(--text-muted);
+      margin-left: 1.25rem;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .project-content li {
+      margin-bottom: 0.35rem;
+    }
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .tech-tag {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1rem; }
+      h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../index.html#projects" class="back-link">← Projelerime dön</a>
+      <h1>Twitch Çeviri Uygulaması</h1>
+      <p class="subtitle">Twitch yayınlarından ses alıp konuşmayı metne çeviren ve Türkçe’ye çeviren masaüstü uygulaması</p>
+    </header>
+
+    <div class="project-image-wrap">
+      <img src="img/twitch-ceviiri-uyg-fotografi.png" alt="Twitch Çeviri Uygulaması ekran görüntüsü">
+    </div>
+
+    <div class="project-content">
+      <h2>Proje Hakkında</h2>
+      <p>
+        Bu proje, Twitch üzerindeki canlı yayınlardan sesi alıp konuşmayı metne dönüştüren (speech-to-text) ve ardından bu metni Türkçe’ye çeviren bir masaüstü uygulamasıdır. Yayıncı veya izleyici, yabancı dilde yapılan yayınları anlık olarak Türkçe metinle takip edebilir.
+      </p>
+      <h2>Özellikler</h2>
+      <ul>
+        <li>Twitch yayın URL’si ile canlı ses akışını dinleme</li>
+        <li>Vosk kütüphanesi ile konuşmayı metne çevirme (İngilizce ve diğer diller)</li>
+        <li>DeepL API ile metni Türkçe’ye çevirme</li>
+        <li>Tkinter ile arayüz: URL girişi, API anahtarı, metin çıktı alanı</li>
+        <li>Uygulama yerel ortamda (Python + gerekli kütüphaneler) çalıştırılır; tarayıcıda çalıştırılamaz.</li>
+      </ul>
+      <h2>Kullanılan Teknolojiler</h2>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Tkinter</span>
+        <span class="tech-tag">Vosk (Speech-to-Text)</span>
+        <span class="tech-tag">DeepL API</span>
+        <span class="tech-tag">FFmpeg</span>
+        <span class="tech-tag">Twitch</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

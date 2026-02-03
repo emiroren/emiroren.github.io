@@ -45,6 +45,11 @@ const projectsData = {
       title: "Blog Sitesi",
       description: "Bu projede Kişisel blog sitesi tasarladım. <br> <br> Kullanıcının: <br> -Blog yazılarını okuyabilmesi <br> -Yeni yazıları takip edebilmesi",
       link: "/proje-3/index.html"
+    },
+    {
+      title: "Twitch Çeviri Uygulaması",
+      description: "Twitch yayınlarından ses alıp konuşmayı metne çeviren ve Türkçe'ye çeviren masaüstü uygulaması. <br> <br> -Vosk ile konuşmayı metne dönüştürme <br> -DeepL ile Türkçe çeviri <br> -Python / Tkinter arayüzü. Projeye tıklayarak tanıtım sayfasını ve ekran görüntüsünü görebilirsiniz.",
+      link: "/proje-4/proje4.html"
     }
   ],
   en: [
@@ -62,6 +67,11 @@ const projectsData = {
       title: "Blog Site",
       description: "In this project, I designed a personal blog site. <br> <br> The user can: <br> -Read blog posts <br> -Follow new posts.",
       link: "/proje-3/index.html"
+    },
+    {
+      title: "Twitch Translation App",
+      description: "Desktop app that captures audio from Twitch streams, converts speech to text, and translates to Turkish. <br> <br> -Speech-to-text with Vosk <br> -Translation with DeepL <br> -Python / Tkinter GUI. Click to open the project page with screenshot and details.",
+      link: "/proje-4/proje4.html"
     }
   ]
 };
