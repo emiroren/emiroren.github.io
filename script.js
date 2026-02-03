@@ -2,11 +2,12 @@
 const translations = {
   tr: {
     nav: ["Hakkımda", "Projeler", "Katıldığım Projeler"],
+    heroSubtitle: "Web Geliştirici · Öğrenci",
     aboutTitle: "Hakkımda",
     aboutDesc: "Ben İbrahim Emir Ören, Denizli Necla Ergun Abalıoğlu Ticaret Mesleki ve Teknik Anadolu Lisesi'nde 12. sınıf öğrencisiyim. Web geliştirme alanında projeler üreten, HTML, CSS, JavaScript ve PHP konularında bilgi sahibi bir lise öğrencisiyim. Kullanıcı deneyimini ön planda tutan, modern ve responsıve tasarımlar oluşturmayı hedefliyor; sürekli olarak kendimi geliştirmeye çalışıyorum.",
     contact: [
       { label: "E-posta", value: "emiroren.business@gmail.com" },
-      { label: "GitHub", value: '<a href="https://github.com/emiroren">github.com/emiroren</a>' }
+      { label: "GitHub", value: '<a href="https://github.com/emiroren" target="_blank" rel="noopener">github.com/emiroren</a>' }
     ],
     projectsTitle: "Projelerim",
     participatedProjectsTitle: "Katıldığım Projeler",
@@ -14,11 +15,12 @@ const translations = {
   },
   en: {
     nav: ["About", "Projects", "Participated Projects"],
+    heroSubtitle: "Web Developer · Student",
     aboutTitle: "About Me",
     aboutDesc: "My name is İbrahim Emir Ören, and I am a 12th grade student at Denizli Necla Ergun Abalıoğlu Trade Vocational and Technical Anatolian High School. I am a high school student who produces projects in the field of web development and has knowledge of HTML, CSS, JavaScript, and PHP. I aim to create modern and responsive designs that prioritise user experience, and I constantly strive to improve myself.",
     contact: [
       { label: "Email", value: "emiroren.business@gmail.com" },
-      { label: "GitHub", value: '<a href="https://github.com/emiroren">github.com/emiroren</a>' }
+      { label: "GitHub", value: '<a href="https://github.com/emiroren" target="_blank" rel="noopener">github.com/emiroren</a>' }
     ],
     projectsTitle: "My Projects",
     participatedProjectsTitle: "Projects I Participated In",
@@ -99,6 +101,9 @@ function setLanguage(lang) {
   translations[lang].nav.forEach((text, i) => {
     navLinks[i].textContent = text;
   });
+  // Hero alt başlık
+  const heroSub = document.querySelector('.hero-subtitle');
+  if (heroSub) heroSub.textContent = translations[lang].heroSubtitle;
   // Hakkımda başlık ve açıklama
   document.querySelector('#about h2').textContent = translations[lang].aboutTitle;
   document.querySelector('#about .about-info p').textContent = translations[lang].aboutDesc;
@@ -146,11 +151,12 @@ function renderParticipatedProjects() {
     const card = document.createElement('div');
     card.className = 'participated-project-card';
     card.innerHTML = `
-      ${project.img ? `<img class="participated-project-img" src="${project.img}" alt="${project.title}">` : ''}
-      <div class="project-title">${project.title}</div>
-      <div class="project-desc">${project.description}</div>
+      ${project.img ? `<div class="card-image-wrap"><img class="participated-project-img" src="${project.img}" alt="${project.title}"></div>` : ''}
+      <div class="card-body">
+        <div class="project-title">${project.title}</div>
+        <div class="project-desc">${project.description}</div>
+      </div>
     `;
-    // Proje fotoğrafına tıklama olayı ekle
     if (project.img) {
       card.querySelector('.participated-project-img').addEventListener('click', function() {
         openCertificateModal(project.img);
